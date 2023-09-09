@@ -1,0 +1,232 @@
+{
+  "cr-0.25": {
+    "count": 16,
+    "results": [
+      {
+        "index": "axe-beak",
+        "name": "Axe Beak",
+        "url": "/api/monsters/axe-beak"
+      },
+      {
+        "index": "boar",
+        "name": "Boar",
+        "url": "/api/monsters/boar"
+      },
+      {
+        "index": "constrictor-snake",
+        "name": "Constrictor Snake",
+        "url": "/api/monsters/constrictor-snake"
+      },
+      {
+        "index": "draft-horse",
+        "name": "Draft Horse",
+        "url": "/api/monsters/draft-horse"
+      },
+      {
+        "index": "elk",
+        "name": "Elk",
+        "url": "/api/monsters/elk"
+      },
+      {
+        "index": "giant-badger",
+        "name": "Giant Badger",
+        "url": "/api/monsters/giant-badger"
+      },
+      {
+        "index": "giant-bat",
+        "name": "Giant Bat",
+        "url": "/api/monsters/giant-bat"
+      },
+      {
+        "index": "giant-centipede",
+        "name": "Giant Centipede",
+        "url": "/api/monsters/giant-centipede"
+      },
+      {
+        "index": "giant-frog",
+        "name": "Giant Frog",
+        "url": "/api/monsters/giant-frog"
+      },
+      {
+        "index": "giant-lizard",
+        "name": "Giant Lizard",
+        "url": "/api/monsters/giant-lizard"
+      },
+      {
+        "index": "giant-owl",
+        "name": "Giant Owl",
+        "url": "/api/monsters/giant-owl"
+      },
+      {
+        "index": "giant-poisonous-snake",
+        "name": "Giant Poisonous Snake",
+        "url": "/api/monsters/giant-poisonous-snake"
+      },
+      {
+        "index": "giant-wolf-spider",
+        "name": "Giant Wolf Spider",
+        "url": "/api/monsters/giant-wolf-spider"
+      },
+      {
+        "index": "panther",
+        "name": "Panther",
+        "url": "/api/monsters/panther"
+      },
+      {
+        "index": "riding-horse",
+        "name": "Riding Horse",
+        "url": "/api/monsters/riding-horse"
+      },
+      {
+        "index": "wolf",
+        "name": "Wolf",
+        "url": "/api/monsters/wolf"
+      }
+    ]
+  },
+  "cr-0.5": {
+    "count": 8,
+    "results": [
+      {
+        "index": "ape",
+        "name": "Ape",
+        "url": "/api/monsters/ape"
+      },
+      {
+        "index": "black-bear",
+        "name": "Black Bear",
+        "url": "/api/monsters/black-bear"
+      },
+      {
+        "index": "crocodile",
+        "name": "Crocodile",
+        "url": "/api/monsters/crocodile"
+      },
+      {
+        "index": "giant-goat",
+        "name": "Giant Goat",
+        "url": "/api/monsters/giant-goat"
+      },
+      {
+        "index": "giant-sea-horse",
+        "name": "Giant Sea Horse",
+        "url": "/api/monsters/giant-sea-horse"
+      },
+      {
+        "index": "giant-wasp",
+        "name": "Giant Wasp",
+        "url": "/api/monsters/giant-wasp"
+      },
+      {
+        "index": "reef-shark",
+        "name": "Reef Shark",
+        "url": "/api/monsters/reef-shark"
+      },
+      {
+        "index": "warhorse",
+        "name": "Warhorse",
+        "url": "/api/monsters/warhorse"
+      }
+    ]
+  },
+  "cr-1": {
+    "count": 10,
+    "results": [
+      {
+        "index": "brown-bear",
+        "name": "Brown Bear",
+        "url": "/api/monsters/brown-bear"
+      },
+      {
+        "index": "dire-wolf",
+        "name": "Dire Wolf",
+        "url": "/api/monsters/dire-wolf"
+      },
+      {
+        "index": "giant-eagle",
+        "name": "Giant Eagle",
+        "url": "/api/monsters/giant-eagle"
+      },
+      {
+        "index": "giant-hyena",
+        "name": "Giant Hyena",
+        "url": "/api/monsters/giant-hyena"
+      },
+      {
+        "index": "giant-octopus",
+        "name": "Giant Octopus",
+        "url": "/api/monsters/giant-octopus"
+      },
+      {
+        "index": "giant-spider",
+        "name": "Giant Spider",
+        "url": "/api/monsters/giant-spider"
+      },
+      {
+        "index": "giant-toad",
+        "name": "Giant Toad",
+        "url": "/api/monsters/giant-toad"
+      },
+      {
+        "index": "giant-vulture",
+        "name": "Giant Vulture",
+        "url": "/api/monsters/giant-vulture"
+      },
+      {
+        "index": "lion",
+        "name": "Lion",
+        "url": "/api/monsters/lion"
+      },
+      {
+        "index": "tiger",
+        "name": "Tiger",
+        "url": "/api/monsters/tiger"
+      }
+    ]
+  },
+  "cr-2": {
+    "count": 8,
+    "results": [
+      {
+        "index": "giant-boar",
+        "name": "Giant Boar",
+        "url": "/api/monsters/giant-boar"
+      },
+      {
+        "index": "giant-constrictor-snake",
+        "name": "Giant Constrictor Snake",
+        "url": "/api/monsters/giant-constrictor-snake"
+      },
+      {
+        "index": "giant-elk",
+        "name": "Giant Elk",
+        "url": "/api/monsters/giant-elk"
+      },
+      {
+        "index": "hunter-shark",
+        "name": "Hunter Shark",
+        "url": "/api/monsters/hunter-shark"
+      },
+      {
+        "index": "plesiosaurus",
+        "name": "Plesiosaurus",
+        "url": "/api/monsters/plesiosaurus"
+      },
+      {
+        "index": "polar-bear",
+        "name": "Polar Bear",
+        "url": "/api/monsters/polar-bear"
+      },
+      {
+        "index": "rhinoceros",
+        "name": "Rhinoceros",
+        "url": "/api/monsters/rhinoceros"
+      },
+      {
+        "index": "saber-toothed-tiger",
+        "name": "Saber-Toothed Tiger",
+        "url": "/api/monsters/saber-toothed-tiger"
+      }
+    ]
+  }
+}
