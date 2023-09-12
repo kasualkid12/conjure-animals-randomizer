@@ -4,12 +4,12 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	monsterData "github.com/kasualkid12/conjure-animals-randomizer/modules"
+	grabMonster "github.com/kasualkid12/conjure-animals-randomizer/modules"
 )
 
 func main() {
 
-	monster := monsterData.GrabMonster()
+	monster := grabMonster.GrabMonster("Cr0_25")
 
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
