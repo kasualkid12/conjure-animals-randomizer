@@ -1,5 +1,0 @@
-package monsterData
-
-func MonsterData() {
-	
-}
