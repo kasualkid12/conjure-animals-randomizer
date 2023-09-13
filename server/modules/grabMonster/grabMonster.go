@@ -1,9 +1,9 @@
 package grabMonster
 
 import (
-	"math/rand"
 	"encoding/json"
 	"log"
+	"math/rand"
 	"os"
 )
 

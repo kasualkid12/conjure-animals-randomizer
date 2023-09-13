@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	grabMonster "github.com/kasualkid12/conjure-animals-randomizer/server/modules"
+	"github.com/kasualkid12/conjure-animals-randomizer/modules/grabMonster"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github.com/kasualkid12/conjure-animals-randomizer/server
+module github.com/kasualkid12/conjure-animals-randomizer
 
 go 1.21.1
 

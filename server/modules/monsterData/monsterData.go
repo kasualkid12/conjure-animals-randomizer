@@ -1,0 +1,5 @@
+package monsterData
+
+func monsterData() {
+
+}
