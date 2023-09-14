@@ -2,10 +2,9 @@ package monsterData
 
 import (
 	"encoding/json"
-	"fmt"
-	"io"
 	"log"
-	"net/http"
+
+	dndapi "github.com/kasualkid12/conjure-animals-randomizer/modules/dndApi"
 )
 
 type Data struct {
@@ -117,20 +116,10 @@ type Api struct {
 }
 
 func MonsterData(api string) Data {
-	requestURL := fmt.Sprintf("https://www.dnd5eapi.co%s", api)
-
-	res, err := http.Get(requestURL)
-	if err != nil {
-		log.Fatal("Error making http request: ", err)
-	}
-
-	body, err := io.ReadAll(res.Body)
-	if err != nil {
-		log.Fatal("Error reading response body: ", err)
-	}
+	body := dndapi.DndApi(api)
 
 	var payload Data
-	err = json.Unmarshal(body, &payload)
+	err := json.Unmarshal(body, &payload)
 	if err != nil {
 		log.Fatal("Error with Unmarshal(): ", err)
 	}
