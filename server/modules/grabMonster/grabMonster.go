@@ -14,15 +14,15 @@ type Data struct {
 	Cr2    Monsters `json:"cr-2"`
 }
 
-type Monster struct {
+type Monsters struct {
+	Count   int   `json:"count"`
+	Results []Api `json:"results"`
+}
+
+type Api struct {
 	Index string `json:"index"`
 	Name  string `json:"name"`
 	Url   string `json:"url"`
-}
-
-type Monsters struct {
-	Count   int       `json:"count"`
-	Results []Monster `json:"results"`
 }
 
 // GrabMonster will parse the json file to randomly pick a monster of the chosen CR
@@ -41,16 +41,16 @@ func GrabMonster(cr string) string {
 	switch {
 	case cr == "Cr0_25":
 		num := rand.Intn(payload.Cr0_25.Count)
-		return payload.Cr0_25.Results[num - 1].Url
+		return payload.Cr0_25.Results[num-1].Url
 	case cr == "Cr0_5":
 		num := rand.Intn(payload.Cr0_5.Count)
-		return payload.Cr0_5.Results[num - 1].Url
+		return payload.Cr0_5.Results[num-1].Url
 	case cr == "Cr1":
 		num := rand.Intn(payload.Cr1.Count)
-		return payload.Cr1.Results[num - 1].Url
+		return payload.Cr1.Results[num-1].Url
 	case cr == "Cr2":
 		num := rand.Intn(payload.Cr2.Count)
-		return payload.Cr2.Results[num - 1].Url
+		return payload.Cr2.Results[num-1].Url
 	default:
 		return "No cr selected"
 	}
