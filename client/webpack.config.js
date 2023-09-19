@@ -4,17 +4,18 @@ const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
+console.log(isDevelopment);
+
 module.exports = {
   mode: isDevelopment ? 'development' : 'production',
   entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'main.js',
-    publicPath: '',
   },
   target: 'web',
   devServer: {
-    port: 3000,
+    port: 4000,
     open: true,
     hot: true,
   },
@@ -24,8 +25,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        include: path.join(__dirname, 'src'),
+        test: /\.[jt]sx?$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: require.resolve('babel-loader'),
@@ -48,10 +49,11 @@ module.exports = {
     ],
   },
   plugins: [
-    isDevelopment && new ReactRefreshPlugin(),
+    new ReactRefreshPlugin(),
     new HtmlWebpackPlugin({
       filename: './index.html',
       template: './src/index.html',
+      hash: true,
     }),
-  ].filter(Boolean),
+  ],
 };

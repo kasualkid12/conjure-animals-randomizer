@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.jsx",
   "scripts": {
-    "start": "webpack serve --hot --mode development",
+    "start": "webpack-dev-server --hot",
     "build": "webpack --mode production",
     "test": "test"
   },
@@ -39,6 +39,7 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-hot-middleware": "^2.25.4"
   }
 }

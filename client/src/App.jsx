@@ -1,7 +1,3 @@
-/**
- * @refresh reset
- */
-
 import React from 'react';
 import './Styles/App.scss';
 
@@ -18,7 +14,7 @@ const App = () => {
           <option value={'Cr1'}>CR 1</option>
           <option value={'Cr2'}>CR 2</option>
         </select>
-        <button type='button'>Conjure Animals</button>
+        <button type="button">Conjure Animals</button>
       </div>
     </div>
   );
