@@ -1,9 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+
+const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  mode: 'development',
-  entry: './index.js',
+  mode: isDevelopment ? 'development' : 'production',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'main.js',
@@ -12,23 +15,43 @@ module.exports = {
   target: 'web',
   devServer: {
     port: 3000,
-    static: [path.resolve(__dirname, 'public')],
     open: true,
     hot: true,
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: './index.html'
-  })],
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: 'babel-loader',
+        test: /\.jsx?$/,
+        include: path.join(__dirname, 'src'),
+        use: [
+          {
+            loader: require.resolve('babel-loader'),
+            options: {
+              plugins: [
+                isDevelopment && require.resolve('react-refresh/babel'),
+              ].filter(Boolean),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(s(a|c)ss)$/,
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
     ],
   },
+  plugins: [
+    isDevelopment && new ReactRefreshPlugin(),
+    new HtmlWebpackPlugin({
+      filename: './index.html',
+      template: './src/index.html',
+    }),
+  ].filter(Boolean),
 };
