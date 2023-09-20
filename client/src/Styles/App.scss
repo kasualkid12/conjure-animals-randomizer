@@ -1,5 +1,15 @@
+@font-face {
+  font-family: MrsEavesSmallCaps;
+  src: url(fonts/MrsEavesSmallCaps.otf);
+}
+
+@font-face {
+  font-family: 'Scala Sans Offc';
+  src: url(fonts/ScalaSansOffc.ttf);
+}
+
 body {
-  background-color: #36454F;
+  background-color: #36454f;
   color: white;
 }
 
@@ -7,3 +17,15 @@ body {
   display: flex;
   justify-content: center;
 }
+
+@import 'Title';
+
+@import 'Monster';
+
+@import 'Header';
+
+@import 'Attribute';
+
+@import 'Monster_stats';
+
+@import 'Monster_stat';
