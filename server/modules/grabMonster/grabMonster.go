@@ -41,16 +41,16 @@ func GrabMonster(cr string) string {
 	switch {
 	case cr == "Cr0_25":
 		num := rand.Intn(payload.Cr0_25.Count)
-		return payload.Cr0_25.Results[num-1].Url
+		return payload.Cr0_25.Results[num].Url
 	case cr == "Cr0_5":
 		num := rand.Intn(payload.Cr0_5.Count)
-		return payload.Cr0_5.Results[num-1].Url
+		return payload.Cr0_5.Results[num].Url
 	case cr == "Cr1":
 		num := rand.Intn(payload.Cr1.Count)
-		return payload.Cr1.Results[num-1].Url
+		return payload.Cr1.Results[num].Url
 	case cr == "Cr2":
 		num := rand.Intn(payload.Cr2.Count)
-		return payload.Cr2.Results[num-1].Url
+		return payload.Cr2.Results[num].Url
 	default:
 		return "No cr selected"
 	}

@@ -14,6 +14,9 @@ module.exports = {
   },
   target: 'web',
   devServer: {
+    proxy: {
+      '/api': 'http://localhost:8080/'
+    },
     port: 4000,
     open: true,
     hot: true,

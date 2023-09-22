@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Title = () => {
+const Title = ({ setData }) => {
+  const onClick = () => {
+    useEffect(() => {
+      async function fetchData() {
+        try {
+          const response = await fetch('http://localhost:8080/');
+          const jsonData = await response.json();
+          setData(jsonData);
+        } catch (err) {
+          console.error('Error fetching data:', err);
+        }
+      }
+
+      fetchData();
+    }, []);
+  };
+
   return (
     <div>
       <div className="title">
@@ -13,7 +29,9 @@ const Title = () => {
           <option value={'Cr1'}>CR 1</option>
           <option value={'Cr2'}>CR 2</option>
         </select>
-        <button type="button">Conjure Animals</button>
+        <button type="button" onClick={onClick()}>
+          Conjure Animals
+        </button>
       </div>
     </div>
   );

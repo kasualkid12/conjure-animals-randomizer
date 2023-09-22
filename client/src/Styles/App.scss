@@ -18,6 +18,8 @@ body {
   justify-content: center;
 }
 
+@import 'Separator';
+
 @import 'Title';
 
 @import 'Monster';
@@ -29,3 +31,7 @@ body {
 @import 'Monster_stats';
 
 @import 'Monster_stat';
+
+@import 'Special_abilities';
+
+@import 'Actions';

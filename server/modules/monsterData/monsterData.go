@@ -46,9 +46,11 @@ type ArmorClass struct {
 }
 
 type Speed struct {
-	Walk  string `json:"walk"`
-	Climb string `json:"climb"`
-	Fly   string `json:"fly"`
+	Walk   string `json:"walk"`
+	Swim   string `json:"swim"`
+	Climb  string `json:"climb"`
+	Fly    string `json:"fly"`
+	Burrow string `json:"burrow"`
 }
 
 type Proficiencies struct {
@@ -118,7 +120,17 @@ type Api struct {
 func MonsterData(api string) Data {
 	body := dndapi.DndApi(api)
 
-	var payload Data
+	defaultData := Data{
+		Speed: Speed{
+			Walk:   "none",
+			Swim:   "none",
+			Climb:  "none",
+			Fly:    "none",
+			Burrow: "none",
+		},
+	}
+
+	var payload Data = defaultData
 	err := json.Unmarshal(body, &payload)
 	if err != nil {
 		log.Fatal("Error with Unmarshal(): ", err)
