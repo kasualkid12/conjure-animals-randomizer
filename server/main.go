@@ -16,7 +16,8 @@ func main() {
 	r.Use(cors.Default())
 
 	r.GET("/", func(c *gin.Context) {
-		monster := grabMonster.GrabMonster("Cr0_25")
+		cr := c.Query("cr")
+		monster := grabMonster.GrabMonster(cr)
 		data := monsterData.MonsterData(monster)
 		c.JSON(http.StatusOK, gin.H{
 			"data": data,

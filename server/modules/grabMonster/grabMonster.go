@@ -9,7 +9,7 @@ import (
 
 type Data struct {
 	Cr0_25 Monsters `json:"cr-0.25"`
-	Cr0_5  Monsters `json:"cr-0.50"`
+	Cr0_5  Monsters `json:"cr-0.5"`
 	Cr1    Monsters `json:"cr-1"`
 	Cr2    Monsters `json:"cr-2"`
 }
